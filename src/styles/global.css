@@ -1,0 +1,24 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.5;
+}
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  font-weight: var(--weight-bold);
+}
+code,
+pre,
+kbd {
+  font-family: var(--font-mono);
+}
