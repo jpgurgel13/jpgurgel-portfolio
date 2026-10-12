@@ -1,15 +1,20 @@
+import { Routes, Route } from "react-router";
+import EditorLayout from "./layouts/EditorLayout";
+import Home from "./pages/Home";
+import Projects from "./pages/Projects";
+import ProjectDetails from "./pages/ProjectDetails";
+import NotFound from "./pages/NotFound";
+
 function App() {
   return (
-    <section>
-      <h1>Tecendo a web_</h1>
-      <p>
-        Olá, meu nome é João Paulo Gurgel, sou desenvolvedor front-end e estou
-        sempre em busca de novos desafios e oportunidades para aprimorar minhas
-        habilidades. Tenho experiência em desenvolvimento web, com foco em
-        tecnologias como HTML, CSS, JavaScript e React. Estou animado para
-        contribuir com projetos inovadores e colaborar com equipes talentosas.
-      </p>
-    </section>
+    <Routes>
+      <Route element={<EditorLayout />}>
+        <Route index element={<Home />} />
+        <Route path="projects" element={<Projects />} />
+        <Route path="projects/:slug" element={<ProjectDetails />} />
+        <Route path="*" element={<NotFound />} />
+      </Route>
+    </Routes>
   );
 }
 
