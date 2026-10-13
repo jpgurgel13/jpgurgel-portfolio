@@ -10,6 +10,9 @@ function Sidebar() {
       <Link className={styles.link} to="/projects">
         Projetos
       </Link>
+      <Link className={styles.link} to="/contact">
+        Contato
+      </Link>
     </nav>
   );
 }
