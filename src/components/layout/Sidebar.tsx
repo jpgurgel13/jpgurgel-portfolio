@@ -1,10 +1,15 @@
-import { Link, Outlet } from "react-router";
+import { Link } from "react-router";
+import styles from "./Sidebar.module.css";
 
 function Sidebar() {
   return (
-    <nav>
-      <Link to="/">Home</Link>
-      <Link to="/projects">Projetos</Link>
+    <nav className={styles.sidebar}>
+      <Link className={styles.link} to="/">
+        Home
+      </Link>
+      <Link className={styles.link} to="/projects">
+        Projetos
+      </Link>
     </nav>
   );
 }

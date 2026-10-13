@@ -1,7 +1,6 @@
-import { Link, Outlet } from "react-router";
+import { Outlet } from "react-router";
 import styles from "./EditorLayout.module.css";
 import Sidebar from "../components/layout/Sidebar";
-
 function EditorLayout() {
   return (
     <div className={styles.layout}>
