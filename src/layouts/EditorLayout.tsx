@@ -1,16 +1,15 @@
 import { Link, Outlet } from "react-router";
 import styles from "./EditorLayout.module.css";
+import Sidebar from "../components/layout/Sidebar";
 
 function EditorLayout() {
   return (
     <div className={styles.layout}>
       <header className={styles.topbar}>topbar</header>
 
-      <nav className={styles.sidebar}>
-        <Link to="/">Home</Link>
-        <Link to="/projects">Projetos</Link>
-      </nav>
-
+      <aside className={styles.sidebar}>
+        <Sidebar />
+      </aside>
       <main className={styles.main}>
         <Outlet />
       </main>
