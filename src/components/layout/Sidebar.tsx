@@ -1,18 +1,18 @@
-import { Link } from "react-router";
+import { NavLink } from "react-router";
 import styles from "./Sidebar.module.css";
 
 function Sidebar() {
   return (
     <nav className={styles.sidebar}>
-      <Link className={styles.link} to="/">
+      <NavLink className={styles.link} to="/">
         Home
-      </Link>
-      <Link className={styles.link} to="/projects">
+      </NavLink>
+      <NavLink className={styles.link} to="/projects">
         Projetos
-      </Link>
-      <Link className={styles.link} to="/contact">
+      </NavLink>
+      <NavLink className={styles.link} to="/contact">
         Contato
-      </Link>
+      </NavLink>
     </nav>
   );
 }
