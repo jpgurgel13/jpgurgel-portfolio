@@ -22,7 +22,6 @@
 }
 .main {
   grid-area: main;
-  background-color: var(--color-border);
   overflow: auto;
 }
 .terminal {
