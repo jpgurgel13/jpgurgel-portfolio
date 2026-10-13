@@ -1,11 +1,14 @@
 function Contact() {
   return (
-    <section>
-      <h2>WHATSAPP</h2>
-      <a href="#">Whats</a>
-      <h2>INSTAGRAM</h2>
-      <a href="#">Instagram</a>
-    </section>
+    <>
+      <h1>Contatos</h1>
+      <section>
+        <h2>WhatsApp</h2>
+        <a href="#">Whats</a>
+        <h2>INSTAGRAM</h2>
+        <a href="#">Instagram</a>
+      </section>
+    </>
   );
 }
 
