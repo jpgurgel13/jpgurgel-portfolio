@@ -1,7 +1,7 @@
 import { useParams } from "react-router";
-function ProjectsDetails() {
+function ProjectDetails() {
   const { slug } = useParams();
 
   return <p>Detalhes do projeto: {slug}</p>;
 }
-export default ProjectsDetails;
+export default ProjectDetails;
