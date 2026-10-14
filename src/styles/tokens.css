@@ -31,4 +31,8 @@
 
   --radius-sm: 4px;
   --radius-md: 8px;
+
+  /* Layout */
+  --container-max: 70rem;
+  --header-height: 4rem;
 }

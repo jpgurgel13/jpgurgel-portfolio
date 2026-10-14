@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router";
-import EditorLayout from "./layouts/EditorLayout";
+import SiteLayout from "./layouts/SiteLayout";
 import Home from "./pages/Home";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
@@ -9,7 +9,7 @@ import NotFound from "./pages/NotFound";
 function App() {
   return (
     <Routes>
-      <Route element={<EditorLayout />}>
+      <Route element={<SiteLayout />}>
         <Route index element={<Home />} />
         <Route path="projects" element={<Projects />} />
         <Route path="contact" element={<Contact />} />
