@@ -16,6 +16,14 @@
   gap: var(--space-6);
   flex-wrap: wrap;
 }
+.buttonPrimary,
+.buttonSecondary {
+  padding: var(--space-2) var(--space-3);
+  text-decoration: none;
+  border-radius: var(--radius-md);
+  color: var(--color-text);
+}
+
 .buttonPrimary {
   background-color: var(--color-primary);
 
@@ -23,11 +31,4 @@
 }
 .buttonSecondary {
   border: solid 2px var(--color-accent);
-}
-.buttonPrimary,
-.buttonSecondary {
-  padding: var(--space-2) var(--space-3);
-  text-decoration: none;
-  border-radius: var(--radius-md);
-  color: var(--color-text);
 }
