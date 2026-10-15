@@ -1,3 +1,20 @@
+.container {
+  background-color: var(--syntax-bg);
+  border: solid 2px var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+}
+.fileName {
+  font-family: var(--font-mono);
+  color: var(--syntax-comment);
+  border-bottom: solid 2px var(--color-border);
+  padding: var(--space-2) var(--space-4);
+}
+.pre {
+  padding: var(--space-4);
+  overflow-x: auto;
+  font-size: 0.875rem;
+}
 .code > span {
   display: block;
   color: var(--syntax-text);
