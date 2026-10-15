@@ -18,16 +18,16 @@
 }
 .buttonPrimary {
   background-color: var(--color-primary);
-  padding: var(--space-2) var(--space-3);
-  color: var(--color-text);
-  text-decoration: none;
-  border-radius: var(--radius-md);
+
   border: solid 2px var(--color-primary);
 }
 .buttonSecondary {
-  padding: var(--space-2) var(--space-3);
-  color: var(--color-text);
-  text-decoration: none;
   border: solid 2px var(--color-accent);
+}
+.buttonPrimary,
+.buttonSecondary {
+  padding: var(--space-2) var(--space-3);
+  text-decoration: none;
   border-radius: var(--radius-md);
+  color: var(--color-text);
 }
