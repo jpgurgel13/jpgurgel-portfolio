@@ -3,6 +3,12 @@
   flex-direction: column;
   gap: var(--space-3);
 }
+.divisionContainer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
 .title {
   font-size: clamp(2rem, 10vw, 4.5rem);
 }
