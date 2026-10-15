@@ -28,12 +28,6 @@
     border-color 0.3s ease;
 }
 
-.buttonPrimary,
-.buttonSecondary {
-  /* (espaço reservado só para comparar; não existe no arquivo real) */
-}
-
-/* Primário */
 .buttonPrimary {
   background-color: var(--color-primary);
 }
@@ -42,7 +36,6 @@
   background-color: var(--color-primary-hover);
 }
 
-/* Secundário */
 .buttonSecondary {
   border-color: var(--color-accent);
 }
@@ -56,4 +49,20 @@
 .buttonSecondary:focus-visible {
   outline: 2px solid var(--color-accent-light);
   outline-offset: 3px;
+}
+.cursor {
+  color: var(--color-primary);
+  animation: blink 1s steps(1) infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cursor {
+    animation: none;
+  }
 }
