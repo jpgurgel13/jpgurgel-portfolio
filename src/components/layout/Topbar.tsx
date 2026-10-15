@@ -1,6 +1,6 @@
 import { Link, NavLink } from "react-router";
 import styles from "./Topbar.module.css";
-import logo from "../../assets/logo/jpgurgel-logo-dark.svg";
+import logo from "../../assets/logo/jp-simbolo.svg";
 import { navItems } from "../../data/navigation";
 
 function Topbar() {

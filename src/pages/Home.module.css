@@ -51,7 +51,7 @@
   outline-offset: 3px;
 }
 .cursor {
-  color: var(--color-primary);
+  color: var(--color-accent);
   animation: blink 1s steps(1) infinite;
 }
 
