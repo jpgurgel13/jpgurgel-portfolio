@@ -1,11 +1,11 @@
 import { Link } from "react-router";
 import styles from "./Home.module.css";
 import CodeCard from "../components/home/CodeCard";
+
 function Home() {
   return (
     <section className={styles.container}>
-      <div className={styles.divisionContainer}>
-        {" "}
+      <div className={styles.heroContent}>
         <h1 className={styles.title}>
           Tecendo a web<span className={styles.cursor}>_</span>
         </h1>
@@ -22,9 +22,7 @@ function Home() {
           </Link>
         </div>
       </div>
-      <div className={styles.divisionContainer}>
-        <CodeCard />
-      </div>
+      <CodeCard />
     </section>
   );
 }
