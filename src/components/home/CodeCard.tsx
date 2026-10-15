@@ -5,7 +5,7 @@ function CodeCard() {
     <figure className={styles.container}>
       <figcaption>profile.ts</figcaption>
       <pre>
-        <code>
+        <code className={styles.code}>
           <span>
             <span className={styles.keyword}>const</span>
             {" jp = {"}

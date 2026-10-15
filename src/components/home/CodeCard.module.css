@@ -1,0 +1,13 @@
+.code > span {
+  display: block;
+  color: var(--syntax-text);
+}
+.keyword {
+  color: var(--syntax-keyword);
+}
+.property {
+  color: var(--syntax-property);
+}
+.string {
+  color: var(--syntax-string);
+}
