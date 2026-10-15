@@ -6,11 +6,50 @@ function CodeCard() {
       <figcaption>profile.ts</figcaption>
       <pre>
         <code>
-          <span>{"const jp = {"}</span>
-          <span>{'  nome: "JP",'}</span>
-          <span>{'  cargo: "Dev front-end em formação",'}</span>
-          <span>{'  stack: ["HTML", "CSS", "JavaScript", "React"],'}</span>
-          <span>{'  loc: ["Campo Grande", "MS", "Brasil"],'}</span>
+          <span>
+            <span className={styles.keyword}>const</span>
+            {" jp = {"}
+          </span>
+          <span>
+            {"  "}
+            <span className={styles.property}>nome</span>
+            {": "}
+            <span className={styles.string}>{'"JP"'}</span>
+            {","}
+          </span>
+          <span>
+            {"  "}
+            <span className={styles.property}>cargo</span>
+            {": "}
+            <span className={styles.string}>
+              {'"Dev front-end em formação"'}
+            </span>
+            {","}
+          </span>
+          <span>
+            {"  "}
+            <span className={styles.property}>stack</span>
+            {": ["}
+            <span className={styles.string}>{'"HTML"'}</span>
+            {", "}
+            <span className={styles.string}>{'"CSS"'}</span>
+            {", "}
+            <span className={styles.string}>{'"JavaScript"'}</span>
+            {", "}
+            <span className={styles.string}>{'"React"'}</span>
+            {"],"}
+          </span>
+          <span>
+            {"  "}
+            <span className={styles.property}>loc</span>
+            {": ["}
+            <span className={styles.string}>{'"Campo Grande"'}</span>
+            {", "}
+            <span className={styles.string}>{'"MS"'}</span>
+            {", "}
+            <span className={styles.string}>{'"Brasil"'}</span>
+            {"],"}
+          </span>
           <span>{"};"}</span>
         </code>
       </pre>

@@ -33,7 +33,13 @@
   --radius-sm: 4px;
   --radius-md: 8px;
 
-  /* Layout */
   --container-max: 70rem;
   --header-height: 4rem;
+
+  --syntax-bg: #282a36;
+  --syntax-text: #f8f8f2;
+  --syntax-comment: #6272a4;
+  --syntax-keyword: #ff79c6;
+  --syntax-property: #8be9fd;
+  --syntax-string: #f1fa8c;
 }
