@@ -50,6 +50,15 @@ function CodeCard() {
             <span className={styles.string}>{'"Brasil"'}</span>
             {"],"}
           </span>
+          <span>
+            {"  "}
+            <span className={styles.property}>foco</span>
+            {": "}
+            <span className={styles.string}>
+              {'"Aprender construindo projetos"'}
+            </span>
+            {","}
+          </span>
           <span>{"};"}</span>
         </code>
       </pre>
