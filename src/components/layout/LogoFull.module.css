@@ -4,35 +4,33 @@
   max-width: 22rem;
 }
 
-/* Peças da marca */
 .letterJ {
   fill: var(--color-primary);
   transform-box: fill-box;
-  animation: subir 0.6s ease-out both;
+  animation: subir 0.5s ease-out both;
 }
 
 .letterP {
   fill: var(--color-accent);
   transform-box: fill-box;
-  animation: deslize 0.6s ease-out 0.35s both;
+  animation: deslize 0.5s ease-out 0.2s both;
 }
 
 .cursor {
   fill: var(--color-accent);
-  animation: cursorIn 0.9s steps(1) 0.95s 3 both;
+  animation: cursorIn 0.9s steps(1) 0.7s 3 both;
 }
 
 .name {
   fill: var(--color-text);
-  animation: digitarNome 0.8s step-end 1s both;
+  animation: digitarNome 0.8s step-end 0.8s both;
 }
 
 .jobTitle {
   fill: var(--color-text-muted);
-  animation: digitarCargo 0.75s step-end 1.85s both;
+  animation: digitarCargo 0.75s step-end 1.6s both;
 }
 
-/* Roteiros */
 @keyframes subir {
   from {
     transform: translateY(40%);
@@ -66,32 +64,78 @@
 
 /* Os cortes ficam entre uma letra e outra (calculados a partir das fontes) */
 @keyframes digitarNome {
-  0% { clip-path: inset(0 100% 0 0); }
-  12.50% { clip-path: inset(0 92.50% 0 0); }
-  25.00% { clip-path: inset(0 76.87% 0 0); }
-  37.50% { clip-path: inset(0 61.10% 0 0); }
-  50.00% { clip-path: inset(0 45.48% 0 0); }
-  62.50% { clip-path: inset(0 35.40% 0 0); }
-  75.00% { clip-path: inset(0 20.42% 0 0); }
-  87.50% { clip-path: inset(0 4.88% 0 0); }
-  100% { clip-path: inset(0 0 0 0); }
+  0% {
+    clip-path: inset(0 100% 0 0);
+  }
+  12.50% {
+    clip-path: inset(0 92.5% 0 0);
+  }
+  25.00% {
+    clip-path: inset(0 76.87% 0 0);
+  }
+  37.50% {
+    clip-path: inset(0 61.1% 0 0);
+  }
+  50.00% {
+    clip-path: inset(0 45.48% 0 0);
+  }
+  62.50% {
+    clip-path: inset(0 35.4% 0 0);
+  }
+  75.00% {
+    clip-path: inset(0 20.42% 0 0);
+  }
+  87.50% {
+    clip-path: inset(0 4.88% 0 0);
+  }
+  100% {
+    clip-path: inset(0 0 0 0);
+  }
 }
 
 @keyframes digitarCargo {
-  0% { clip-path: inset(0 100% 0 0); }
-  7.69% { clip-path: inset(0 92.75% 0 0); }
-  15.38% { clip-path: inset(0 84.93% 0 0); }
-  23.08% { clip-path: inset(0 76.99% 0 0); }
-  30.77% { clip-path: inset(0 69.31% 0 0); }
-  38.46% { clip-path: inset(0 60.70% 0 0); }
-  46.15% { clip-path: inset(0 53.42% 0 0); }
-  53.85% { clip-path: inset(0 45.05% 0 0); }
-  61.54% { clip-path: inset(0 37.13% 0 0); }
-  69.23% { clip-path: inset(0 26.08% 0 0); }
-  76.92% { clip-path: inset(0 26.08% 0 0); }
-  84.62% { clip-path: inset(0 15.04% 0 0); }
-  92.31% { clip-path: inset(0 7.19% 0 0); }
-  100% { clip-path: inset(0 0 0 0); }
+  0% {
+    clip-path: inset(0 100% 0 0);
+  }
+  7.69% {
+    clip-path: inset(0 92.75% 0 0);
+  }
+  15.38% {
+    clip-path: inset(0 84.93% 0 0);
+  }
+  23.08% {
+    clip-path: inset(0 76.99% 0 0);
+  }
+  30.77% {
+    clip-path: inset(0 69.31% 0 0);
+  }
+  38.46% {
+    clip-path: inset(0 60.7% 0 0);
+  }
+  46.15% {
+    clip-path: inset(0 53.42% 0 0);
+  }
+  53.85% {
+    clip-path: inset(0 45.05% 0 0);
+  }
+  61.54% {
+    clip-path: inset(0 37.13% 0 0);
+  }
+  69.23% {
+    clip-path: inset(0 26.08% 0 0);
+  }
+  76.92% {
+    clip-path: inset(0 26.08% 0 0);
+  }
+  84.62% {
+    clip-path: inset(0 15.04% 0 0);
+  }
+  92.31% {
+    clip-path: inset(0 7.19% 0 0);
+  }
+  100% {
+    clip-path: inset(0 0 0 0);
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
