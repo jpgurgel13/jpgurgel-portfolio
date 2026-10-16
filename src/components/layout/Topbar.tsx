@@ -1,13 +1,13 @@
 import { Link, NavLink } from "react-router";
 import styles from "./Topbar.module.css";
-import logo from "../../assets/logo/jp-simbolo.svg";
+import LogoSymbol from "./LogoSymbol";
 import { navItems } from "../../data/navigation";
 
 function Topbar() {
   return (
     <div className={styles.topbar}>
       <Link className={styles.brand} to="/">
-        <img src={logo} alt="jpgurgel" className={styles.logo} />
+        <LogoSymbol />
       </Link>
 
       <nav className={styles.nav} aria-label="Principal">
