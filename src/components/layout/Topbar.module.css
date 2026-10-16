@@ -22,10 +22,6 @@
 .brand:focus-visible {
   outline: 2px solid var(--color-accent);
 }
-.logo {
-  height: 40px;
-  display: block;
-}
 
 .nav {
   display: flex;

@@ -2,7 +2,12 @@ import styles from "./LogoSymbol.module.css";
 
 function LogoSymbol() {
   return (
-    <svg viewBox="0 0 64 64" role="img" aria-label="jpgurgel">
+    <svg
+      className={styles.logoJP}
+      viewBox="0 0 64 64"
+      role="img"
+      aria-label="jpgurgel"
+    >
       <path
         className={styles.letterJ}
         d="M28 10a2 2 0 0 1 2-2h6v34a14 14 0 0 1-28 0v-2a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2a6 6 0 0 0 12 0z"

@@ -1,0 +1,14 @@
+.logoJP {
+  display: block;
+  width: 2.5rem;
+}
+
+.letterJ {
+  fill: var(--color-primary);
+}
+.letterP {
+  fill: var(--color-accent);
+}
+.cursor {
+  fill: var(--color-accent);
+}
