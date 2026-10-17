@@ -12,6 +12,9 @@ function ProjectCard({ project }: ProjectCardProps) {
 
   return (
     <article className={cardClassName}>
+      {project.alura && (
+        <span className={styles.aluraBadge}>Projeto Alura</span>
+      )}
       {project.images.length > 0 && (
         <img
           className={styles.projectImage}

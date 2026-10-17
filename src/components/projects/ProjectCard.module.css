@@ -1,4 +1,5 @@
 .card {
+  position: relative;
   display: flex;
   flex-direction: column;
   background-color: var(--color-panel);
@@ -20,6 +21,27 @@
 .featured:hover {
   border-color: var(--color-accent);
   box-shadow: 0 0 1rem var(--color-accent-light);
+}
+
+.aluraBadge {
+  position: absolute;
+  top: var(--space-3);
+  left: var(--space-3);
+  padding: var(--space-1) var(--space-3);
+  border-radius: 999px;
+  background-color: var(--color-bg);
+  opacity: 80%;
+  color: var(--color-accent);
+  font-family: var(--font-mono);
+  font-size: var(--fontsz-sm);
+  cursor: default;
+  transition:
+    opacity 0.2s ease,
+    box-shadow 0.2s ease;
+}
+.aluraBadge:hover {
+  opacity: 100%;
+  box-shadow: 1.5px 1.5px 2px 1px var(--color-accent-light);
 }
 
 .projectImage {
