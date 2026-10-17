@@ -48,6 +48,7 @@
 .linksContainer {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: var(--space-8);
   flex-wrap: wrap;
   margin-top: auto;
@@ -93,19 +94,15 @@
 
 @media (prefers-reduced-motion: reduce) {
   .card,
-  .techTag {
+  .techTag,
+  .liveLink,
+  .repoLink {
     transition: none;
   }
   .card:hover,
-  .techTag:hover {
-    transform: none;
-  }
-  .repoLink,
-  .liveLink {
-    transition: none;
-  }
-  .repoLink:hover,
-  .liveLink:hover {
+  .techTag:hover,
+  .liveLink:hover,
+  .repoLink:hover {
     transform: none;
   }
 }
