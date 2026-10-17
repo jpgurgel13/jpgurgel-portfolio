@@ -1,16 +1,16 @@
 import { projectList } from "../data/projectsData";
 import ProjectCard from "../components/projects/ProjectCard";
-
+import styles from "./Projects.module.css";
 function Projects() {
   return (
-    <>
-      <h1>Projetos</h1>
-      <div>
+    <section className={styles.container}>
+      <h1 className={styles.text}>Projetos</h1>
+      <div className={styles.grid}>
         {projectList.map((item) => (
           <ProjectCard key={item.slug} project={item} />
         ))}
       </div>
-    </>
+    </section>
   );
 }
 
