@@ -29,18 +29,17 @@
   left: var(--space-3);
   padding: var(--space-1) var(--space-3);
   border-radius: 999px;
-  background-color: var(--color-bg);
-  opacity: 80%;
+  background-color: color-mix(in srgb, var(--color-bg) 80%, transparent);
   color: var(--color-accent);
   font-family: var(--font-mono);
   font-size: var(--fontsz-sm);
   cursor: default;
   transition:
-    opacity 0.2s ease,
+    background-color 0.2s ease,
     box-shadow 0.2s ease;
 }
 .aluraBadge:hover {
-  opacity: 100%;
+  background-color: var(--color-bg);
   box-shadow: 1.5px 1.5px 2px 1px var(--color-accent-light);
 }
 
