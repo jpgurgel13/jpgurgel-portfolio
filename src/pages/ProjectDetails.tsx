@@ -1,4 +1,4 @@
-import { useParams } from "react-router";
+import { Link, useParams } from "react-router";
 import { projectList } from "../data/projectsData";
 import NotFound from "./NotFound";
 import styles from "./ProjectDetails.module.css";
@@ -13,11 +13,91 @@ function ProjectDetails() {
   }
 
   return (
-    <>
+    <article className={styles.container}>
       <title>{`${project.title} | jpgurgel`}</title>
-      <h1 className={styles.projectTitle}>{project.title}</h1>
-      <p className={styles.projectDescription}>{project.summary}</p>
-    </>
+
+      <Link to="/projects" className={styles.backLink}>
+        ← Voltar para projetos
+      </Link>
+
+      <header className={styles.header}>
+        {project.alura && (
+          <span className={styles.aluraBadge}>Projeto Alura</span>
+        )}
+        <h1 className={styles.projectTitle}>{project.title}</h1>
+        <ul className={styles.techList}>
+          {project.technologies.map((tech) => (
+            <li key={tech} className={styles.techTag}>
+              {tech}
+            </li>
+          ))}
+        </ul>
+      </header>
+
+      {project.images.length > 0 && (
+        <div className={styles.gallery}>
+          {project.images.map((image, index) => (
+            <img
+              key={image}
+              className={styles.galleryImage}
+              src={image}
+              alt={`Tela ${index + 1} do projeto ${project.title}`}
+              width={1280}
+              height={720}
+            />
+          ))}
+        </div>
+      )}
+
+      {project.description && (
+        <section className={styles.section}>
+          <h2 className={styles.sectionTitle}>Sobre o projeto</h2>
+          {project.description.map((paragraph) => (
+            <p key={paragraph} className={styles.paragraph}>
+              {paragraph}
+            </p>
+          ))}
+        </section>
+      )}
+
+      {project.challenges && (
+        <section className={styles.section}>
+          <h2 className={styles.sectionTitle}>Desafios</h2>
+          {project.challenges.map((challenge) => (
+            <div key={challenge.problem} className={styles.challenge}>
+              <h3 className={styles.challengeTitle}>Problema</h3>
+              <p className={styles.paragraph}>{challenge.problem}</p>
+              <h3 className={styles.challengeTitle}>Como resolvi</h3>
+              <p className={styles.paragraph}>{challenge.solution}</p>
+            </div>
+          ))}
+        </section>
+      )}
+
+      <div className={styles.linksContainer}>
+        {project.liveUrl && (
+          <a
+            className={styles.liveLink}
+            href={project.liveUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Ver online
+          </a>
+        )}
+        {project.repoUrl && (
+          <a
+            className={styles.repoLink}
+            href={project.repoUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Ver código
+          </a>
+        )}
+      </div>
+    </article>
   );
 }
+
 export default ProjectDetails;
