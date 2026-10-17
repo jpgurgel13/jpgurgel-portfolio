@@ -16,7 +16,7 @@ function ProjectDetails() {
     <>
       <title>{`${project.title} | jpgurgel`}</title>
       <h1 className={styles.projectTitle}>{project.title}</h1>
-      <p className={styles.projectDescrition}>{project.summary}</p>
+      <p className={styles.projectDescription}>{project.summary}</p>
     </>
   );
 }
