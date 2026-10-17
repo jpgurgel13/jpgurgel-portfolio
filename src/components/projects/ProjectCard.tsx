@@ -1,6 +1,7 @@
 import type { Project } from "../../types/projectTypes";
 import styles from "./ProjectCard.module.css";
 import TechList from "./TechList";
+import ProjectLinks from "./ProjectLinks";
 
 type ProjectCardProps = {
   project: Project;
@@ -30,28 +31,7 @@ function ProjectCard({ project }: ProjectCardProps) {
         <h2>{project.title}</h2>
         <p>{project.summary}</p>
         <TechList technologies={project.technologies} />
-        <div className={styles.linksContainer}>
-          {project.liveUrl && (
-            <a
-              className={styles.liveLink}
-              href={project.liveUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Ver online
-            </a>
-          )}
-          {project.repoUrl && (
-            <a
-              className={styles.repoLink}
-              href={project.repoUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Ver código
-            </a>
-          )}
-        </div>
+        <ProjectLinks liveUrl={project.liveUrl} repoUrl={project.repoUrl} />
       </div>
     </article>
   );
