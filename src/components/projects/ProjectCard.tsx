@@ -6,8 +6,12 @@ type ProjectCardProps = {
 };
 
 function ProjectCard({ project }: ProjectCardProps) {
+  const cardClassName = project.featured
+    ? `${styles.card} ${styles.featured}`
+    : styles.card;
+
   return (
-    <article className={styles.card}>
+    <article className={cardClassName}>
       {project.images.length > 0 && (
         <img
           className={styles.projectImage}
@@ -16,11 +20,11 @@ function ProjectCard({ project }: ProjectCardProps) {
         />
       )}
       <div className={styles.texts}>
-        <h2 className={styles.titleProjects}>{project.title}</h2>
-        <p className={styles.descrtionProjects}>{project.summary}</p>
+        <h2>{project.title}</h2>
+        <p>{project.summary}</p>
         <ul className={styles.techList}>
           {project.technologies.map((tech) => (
-            <li className={styles.techTag} key={tech}>
+            <li key={tech} className={styles.techTag}>
               {tech}
             </li>
           ))}
