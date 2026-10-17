@@ -55,27 +55,14 @@
   gap: var(--space-3);
   padding: var(--space-4);
 }
-.techList {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  list-style: none;
-  gap: var(--space-3);
-}
-.techTag {
-  background-color: var(--color-surface);
-  border-radius: 999px;
-  padding: var(--space-2) var(--space-4);
-  font-family: var(--font-mono);
-  font-size: var(--fontsz-sm);
-  cursor: default;
-  transition:
-    background-color 0.3s ease,
-    transform 0.3s ease;
-}
-.techTag:hover {
-  background-color: var(--color-border);
-  transform: translateY(-0.2rem);
+
+@media (prefers-reduced-motion: reduce) {
+  .card {
+    transition: none;
+  }
+  .card:hover {
+    transform: none;
+  }
 }
 
 .linksContainer {
@@ -124,15 +111,12 @@
   outline: 2px solid var(--color-accent-light);
   outline-offset: 3px;
 }
-
 @media (prefers-reduced-motion: reduce) {
-  .card,
   .techTag,
   .liveLink,
   .repoLink {
     transition: none;
   }
-  .card:hover,
   .techTag:hover,
   .liveLink:hover,
   .repoLink:hover {

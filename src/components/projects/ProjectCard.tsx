@@ -1,5 +1,6 @@
 import type { Project } from "../../types/projectTypes";
 import styles from "./ProjectCard.module.css";
+import TechList from "./TechList";
 
 type ProjectCardProps = {
   project: Project;
@@ -28,13 +29,7 @@ function ProjectCard({ project }: ProjectCardProps) {
       <div className={styles.texts}>
         <h2>{project.title}</h2>
         <p>{project.summary}</p>
-        <ul className={styles.techList}>
-          {project.technologies.map((tech) => (
-            <li key={tech} className={styles.techTag}>
-              {tech}
-            </li>
-          ))}
-        </ul>
+        <TechList technologies={project.technologies} />
         <div className={styles.linksContainer}>
           {project.liveUrl && (
             <a
