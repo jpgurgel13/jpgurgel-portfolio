@@ -16,11 +16,13 @@ function ProjectCard({ project }: ProjectCardProps) {
         />
       )}
       <div className={styles.texts}>
-        <h2>{project.title}</h2>
-        <p>{project.summary}</p>
-        <ul>
+        <h2 className={styles.titleProjects}>{project.title}</h2>
+        <p className={styles.descrtionProjects}>{project.summary}</p>
+        <ul className={styles.techList}>
           {project.technologies.map((tech) => (
-            <li key={tech}>{tech}</li>
+            <li className={styles.techTag} key={tech}>
+              {tech}
+            </li>
           ))}
         </ul>
         <div className={styles.linksContainer}>

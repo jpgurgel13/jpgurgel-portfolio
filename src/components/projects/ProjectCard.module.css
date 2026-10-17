@@ -3,6 +3,10 @@
   border: solid 2px var(--color-border);
   border-radius: var(--radius-md);
   overflow: hidden;
+  transition: transform 0.5s ease;
+}
+.card:hover {
+  transform: translateY(-0.5rem);
 }
 
 .projectImage {
@@ -14,4 +18,36 @@
   flex-direction: column;
   gap: var(--space-3);
   padding: var(--space-4);
+}
+.techList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: var(--space-3);
+}
+.techTag {
+  background-color: var(--color-surface);
+  border-radius: 999px;
+  padding: var(--space-2) var(--space-4);
+  font-family: var(--font-mono);
+  font-size: var(--fontsz-sm);
+  cursor: default;
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
+}
+.techTag:hover {
+  background-color: var(--color-border);
+  transform: translateY(-0.3rem);
+}
+@media (prefers-reduced-motion: reduce) {
+  .card,
+  .techTag {
+    transition: none;
+  }
+  .card:hover,
+  .techTag:hover {
+    transform: none;
+  }
 }

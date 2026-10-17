@@ -17,7 +17,7 @@
 .pre {
   padding: var(--space-4);
   overflow-x: auto;
-  font-size: 0.875rem;
+  font-size: var(--fontsz-sm);
 }
 .code > span {
   display: block;

@@ -17,6 +17,8 @@
   --font-body: "Inter Variable", sans-serif;
   --font-mono: "JetBrains Mono Variable", monospace;
 
+  --fontsz-sm: 0.875rem;
+
   --weight-regular: 400;
   --weight-medium: 500;
   --weight-semibold: 600;
