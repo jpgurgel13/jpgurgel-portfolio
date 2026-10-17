@@ -7,6 +7,12 @@ type ProjectCardProps = {
 function ProjectCard({ project }: ProjectCardProps) {
   return (
     <article>
+      {project.images.length > 0 && (
+        <img
+          src={project.images[0]}
+          alt={`Tela inicial do projeto ${project.title}`}
+        />
+      )}
       <h2>{project.title}</h2>
       <p>{project.summary}</p>
       <ul>
@@ -21,7 +27,7 @@ function ProjectCard({ project }: ProjectCardProps) {
           </a>
         )}
         {project.repoUrl && (
-          <a href={project.repoUrl} target="blank" rel="noopener noreferrer">
+          <a href={project.repoUrl} target="_blank" rel="noopener noreferrer">
             Ver código
           </a>
         )}
