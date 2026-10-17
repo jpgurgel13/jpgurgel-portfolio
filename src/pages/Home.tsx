@@ -5,6 +5,7 @@ import CodeCard from "../components/home/CodeCard";
 function Home() {
   return (
     <section className={styles.container}>
+      <title>jpgurgel | Dev. Front-end</title>
       <div className={styles.heroContent}>
         <h1 className={styles.title}>
           Tecendo a web<span className={styles.cursor}>_</span>

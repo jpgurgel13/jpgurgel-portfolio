@@ -1,7 +1,7 @@
 function Contact() {
   return (
     <>
-      <h1>Contatos</h1>
+      <title>Contato | jpgurgel</title>;<h1>Contatos</h1>
       <section>
         <h2>WhatsApp</h2>
         <a href="#">Whats</a>

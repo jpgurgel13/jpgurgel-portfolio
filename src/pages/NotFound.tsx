@@ -5,6 +5,7 @@ import LogoFull from "../components/layout/LogoFull";
 function NotFound() {
   return (
     <section className={styles.container}>
+      <title>X 404 X</title>
       <LogoFull />
       <h1 className={styles.title}>Erro 404</h1>
       <p className={styles.text}>
