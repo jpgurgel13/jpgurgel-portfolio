@@ -1,8 +1,8 @@
 import type { Project } from "../types/projectTypes";
-import padariaImagem from "../assets/projects/primeiro-projeto-padaria.png";
-import jogoImagem from "../assets/projects/jogo-numero-secreto.png";
-import colmeiaImagem from "../assets/projects/colmeia-da-sofia.png";
-import listaComprasImagem from "../assets/projects/lista-de-compras.png";
+import padariaImagem from "../assets/projects/primeiro-projeto-padaria.webp";
+import jogoImagem from "../assets/projects/jogo-numero-secreto.webp";
+import colmeiaImagem from "../assets/projects/colmeia-da-sofia.webp";
+import listaComprasImagem from "../assets/projects/lista-de-compras.webp";
 
 export const projectList: Project[] = [
   {
@@ -37,7 +37,7 @@ export const projectList: Project[] = [
     images: [listaComprasImagem],
     liveUrl: "https://jpgurgel13.github.io/ListaDeComprasAlura/",
     repoUrl: "https://github.com/jpgurgel13/ListaDeComprasAlura",
-    featured: true,
+    featured: false,
   },
   {
     slug: "colmeia-da-sofia",

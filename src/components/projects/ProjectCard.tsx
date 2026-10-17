@@ -17,6 +17,9 @@ function ProjectCard({ project }: ProjectCardProps) {
           className={styles.projectImage}
           src={project.images[0]}
           alt={`Tela inicial do projeto ${project.title}`}
+          loading="lazy"
+          width={1280}
+          height={720}
         />
       )}
       <div className={styles.texts}>
