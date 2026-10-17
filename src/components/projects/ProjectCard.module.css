@@ -1,0 +1,17 @@
+.card {
+  background-color: var(--color-panel);
+  border: solid 2px var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.projectImage {
+  display: block;
+  width: 100%;
+}
+.texts {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-4);
+}
