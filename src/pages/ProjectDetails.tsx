@@ -2,6 +2,7 @@ import { Link, useParams } from "react-router";
 import { projectList } from "../data/projectsData";
 import NotFound from "./NotFound";
 import styles from "./ProjectDetails.module.css";
+import TechList from "../components/projects/TechList";
 
 function ProjectDetails() {
   const { slug } = useParams();
@@ -25,13 +26,7 @@ function ProjectDetails() {
           <span className={styles.aluraBadge}>Projeto Alura</span>
         )}
         <h1 className={styles.projectTitle}>{project.title}</h1>
-        <ul className={styles.techList}>
-          {project.technologies.map((tech) => (
-            <li key={tech} className={styles.techTag}>
-              {tech}
-            </li>
-          ))}
-        </ul>
+        <TechList technologies={project.technologies} />
       </header>
 
       {project.images.length > 0 && (
