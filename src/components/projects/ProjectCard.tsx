@@ -14,6 +14,18 @@ function ProjectCard({ project }: ProjectCardProps) {
           <li key={tech}>{tech}</li>
         ))}
       </ul>
+      <div>
+        {project.liveUrl && (
+          <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+            Ver online
+          </a>
+        )}
+        {project.repoUrl && (
+          <a href={project.repoUrl} target="blank" rel="noopener noreferrer">
+            Ver código
+          </a>
+        )}
+      </div>
     </article>
   );
 }
