@@ -1,4 +1,4 @@
-import { projects } from "../data/projects";
+import { projectList } from "../data/projectsData";
 import ProjectCard from "../components/projects/ProjectCard";
 
 function Projects() {
@@ -6,7 +6,7 @@ function Projects() {
     <>
       <h1>Projetos</h1>
       <div>
-        {projects.map((item) => (
+        {projectList.map((item) => (
           <ProjectCard key={item.slug} project={item} />
         ))}
       </div>

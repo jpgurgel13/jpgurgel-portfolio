@@ -1,6 +1,6 @@
-import type { Project } from "../types/project";
+import type { Project } from "../types/projectTypes";
 
-export const projects: Project[] = [
+export const projectList: Project[] = [
   {
     slug: "jogo-numero-secreto",
     title: "Jogo do Número Secreto",

@@ -1,4 +1,4 @@
-import type { Project } from "../../types/project";
+import type { Project } from "../../types/projectTypes";
 
 type ProjectCardProps = {
   project: Project;
