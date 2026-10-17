@@ -28,7 +28,7 @@ function ProjectCard({ project }: ProjectCardProps) {
         <div className={styles.linksContainer}>
           {project.liveUrl && (
             <a
-              className={styles.links}
+              className={styles.liveLink}
               href={project.liveUrl}
               target="_blank"
               rel="noopener noreferrer"
@@ -38,7 +38,7 @@ function ProjectCard({ project }: ProjectCardProps) {
           )}
           {project.repoUrl && (
             <a
-              className={styles.links}
+              className={styles.repoLink}
               href={project.repoUrl}
               target="_blank"
               rel="noopener noreferrer"
