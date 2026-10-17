@@ -12,12 +12,6 @@ function Contact() {
         width={240}
         height={192}
       />
-      <section>
-        <h2>WhatsApp</h2>
-        <a href="#">Whats</a>
-        <h2>Instagram</h2>
-        <a href="#">Instagram</a>
-      </section>
     </section>
   );
 }
