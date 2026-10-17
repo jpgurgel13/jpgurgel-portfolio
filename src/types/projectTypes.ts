@@ -12,7 +12,7 @@ export type Project = {
 
   summary: string | null;
 
-  description?: string;
+  description?: string[];
 
   technologies: Technology[];
 
@@ -25,4 +25,6 @@ export type Project = {
   repoUrl?: string;
 
   featured: boolean;
+
+  alura: boolean;
 };
