@@ -2,6 +2,17 @@ import type { Project } from "../types/projectTypes";
 
 export const projectList: Project[] = [
   {
+    slug: "primeiro-projeto-padaria",
+    title: "Primeiro Projeto - Padaria",
+    summary:
+      "Meu primeiro projeto: o site de uma padaria fictícia, com cardápio e preços. É simples, mas deixei no portfólio para mostrar de onde comecei.",
+    technologies: ["HTML", "CSS"],
+    images: [],
+    liveUrl: "https://portifolio-padaria-v1.vercel.app/",
+    repoUrl: "https://github.com/jpgurgel13/Portifolio-padaria-v1",
+    featured: false,
+  },
+  {
     slug: "jogo-numero-secreto",
     title: "Jogo do Número Secreto",
     summary:
@@ -11,17 +22,6 @@ export const projectList: Project[] = [
     images: [],
     liveUrl: "https://jpgurgel13.github.io/Jogo-Numero-Secreto/",
     repoUrl: "https://github.com/jpgurgel13/Jogo-Numero-Secreto",
-    featured: false,
-  },
-  {
-    slug: "primeiro-projeto-padaria",
-    title: "Primeiro Projeto - Padaria",
-    summary:
-      "Meu primeiro projeto: o site de uma padaria fictícia, com cardápio e preços. É simples, mas deixei no portfólio para mostrar de onde comecei.",
-    technologies: ["HTML", "CSS"],
-    images: [],
-    liveUrl: "https://portifolio-padaria-v1.vercel.app/",
-    repoUrl: "https://github.com/jpgurgel13/Portifolio-padaria-v1",
     featured: false,
   },
   {
