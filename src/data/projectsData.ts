@@ -27,7 +27,7 @@ export const projectList: Project[] = [
         problem:
           "Como tudo era novidade, passei horas tentando acertar o display: flex. Demorei cerca de 6 horas para terminar uma parte que hoje faço em menos de 30 minutos.",
         solution:
-          "Pesquisei como usar o Flexbox em materiais on-line e fui testando até entender como ele funcionava.",
+          "Pesquisei como usar o Flexbox em materiais on-line como:W3school e fui testando até entender como ele funcionava.",
       },
     ],
   },
@@ -66,7 +66,7 @@ export const projectList: Project[] = [
     slug: "lista-de-compras",
     title: "Lista de Compras",
     summary:
-      "Meu segundo projeto com JavaScript: uma lista de compras para adicionar e remover itens. Pratiquei manipulação do DOM e eventos de input.",
+      "Meu segundo projeto com JavaScript: uma lista de compras para adicionar e remover itens, e marcar itens conforme são concluidos. Pratiquei manipulação do DOM e eventos de input.",
     description: [
       "Projeto desenvolvido como atividade prática durante meus estudos na Alura, com foco na manipulação de elementos HTML por meio do JavaScript e na organização do código em módulos.",
       "A aplicação permite adicionar produtos a uma lista de compras e marcar os itens conforme são concluídos. A interface é atualizada dinamicamente, sem a necessidade de recarregar a página, proporcionando uma experiência simples e intuitiva.",
