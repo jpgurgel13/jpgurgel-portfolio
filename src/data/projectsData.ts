@@ -25,8 +25,9 @@ export const projectList: Project[] = [
     challenges: [
       {
         problem:
-          "Era tudo novidade, passei horas tentando acertar o display flex, demorei umas 6 horas pra terminar uma parte que j=hoje faço em menos de 30 minutos",
-        solution: "Pesquisei como usa usei bibliotecas on-line",
+          "Como tudo era novidade, passei horas tentando acertar o display: flex. Demorei cerca de 6 horas para terminar uma parte que hoje faço em menos de 30 minutos.",
+        solution:
+          "Pesquisei como usar o Flexbox em materiais on-line e fui testando até entender como ele funcionava.",
       },
     ],
   },
@@ -49,15 +50,15 @@ export const projectList: Project[] = [
     challenges: [
       {
         problem:
-          "Entender como o JavaScript interage com o HTML e como dividir o código em módulos..",
+          "Entender como o JavaScript interage com o HTML e como dividir o código em módulos.",
         solution:
-          "reassisti as aulas 3x e organizei as funções em arquivos separados e corrigir a referência da variável.",
+          "Reassisti às aulas três vezes, organizei as funções em arquivos separados e corrigi a referência da variável.",
       },
       {
         problem:
-          "O segundo problema foi aprender a lógica do JavaScript, especialmente variáveis, funções e condicionais (if/else), para comparar o palpite com o número secreto e dar dicas ao jogador.",
+          "Aprender a lógica do JavaScript, especialmente variáveis, funções e condicionais (if/else), para comparar o palpite com o número secreto e dar dicas ao jogador.",
         solution:
-          "Usei condições para verificar o palpite e atualizar as mensagens da página",
+          "Usei estruturas condicionais para verificar o palpite e atualizar as mensagens da página.",
       },
     ],
   },
@@ -82,7 +83,7 @@ export const projectList: Project[] = [
     slug: "colmeia-da-sofia",
     title: "Colmeia da Sofia",
     summary:
-      "Feito especialmente para a minha filha: um jogo de apertar botões que tocam sons. Aprendi funções reutilizáveis (DRY), dataset com objeto como dicionário e mobile first.",
+      "Feito especialmente para a minha filha: um jogo de apertar botões que tocam sons. Aprendi a criar funções reutilizáveis (DRY), a usar dataset com um objeto como dicionário e a aplicar mobile-first.",
     description: [
       "A Colmeia da Sofia é um projeto pessoal desenvolvido especialmente para minha filha, com a proposta de transformar o aprendizado inicial em uma experiência interativa, visual e acessível. A ideia é criar um ambiente infantil no qual ela possa explorar conteúdos básicos de maneira intuitiva, utilizando botões grandes, ilustrações e estímulos sonoros.",
       "A aplicação conta com atividades de aprendizagem, incluindo animais e cores. Na atividade de animais, cada opção é representada por uma ilustração e identificada por meio de interações; na atividade de cores, os botões permitem explorar diferentes tonalidades e seus nomes. O projeto utiliza atributos data-* no HTML para associar os elementos às informações correspondentes, facilitando a organização dos dados e a reutilização da lógica em JavaScript.",
@@ -94,6 +95,6 @@ export const projectList: Project[] = [
     liveUrl: "https://colmeia-da-sofia.vercel.app/",
     repoUrl: "https://github.com/jpgurgel13/Colmeia-da-Sofia",
     featured: true,
-    alura: true,
+    alura: false,
   },
 ];
