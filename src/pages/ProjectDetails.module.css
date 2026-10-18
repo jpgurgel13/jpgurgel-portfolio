@@ -1,4 +1,3 @@
-/* Página inteira: largura de leitura confortável, centralizada */
 .container {
   display: flex;
   flex-direction: column;
@@ -7,7 +6,6 @@
   margin: 0 auto;
 }
 
-/* Link de voltar: mesmo estilo do link da página 404 */
 .backLink {
   align-self: flex-start;
   color: var(--color-accent-light);
@@ -26,7 +24,6 @@
   outline-offset: 3px;
 }
 
-/* Cabeçalho: selo, título e tags, um embaixo do outro */
 .header {
   display: flex;
   flex-direction: column;
@@ -59,7 +56,6 @@
   line-height: 1.1;
 }
 
-/* Galeria: uma imagem embaixo da outra, cada uma com moldura */
 .gallery {
   display: flex;
   flex-direction: column;
@@ -74,7 +70,6 @@
   border-radius: var(--radius-md);
 }
 
-/* Seções de texto ("Sobre o projeto" e "Desafios") */
 .section {
   display: flex;
   flex-direction: column;
@@ -90,7 +85,6 @@
   line-height: 1.7;
 }
 
-/* Cada desafio num bloquinho, com a borda colorida à esquerda */
 .challenge {
   display: flex;
   flex-direction: column;

@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import type { Project } from "../../types/projectTypes";
 import styles from "./ProjectCard.module.css";
 import TechList from "./TechList";
@@ -28,7 +29,11 @@ function ProjectCard({ project }: ProjectCardProps) {
         />
       )}
       <div className={styles.texts}>
-        <h2>{project.title}</h2>
+        <h2>
+          <Link to={`/projects/${project.slug}`} className={styles.titleLink}>
+            {project.title}
+          </Link>
+        </h2>
         <p>{project.summary}</p>
         <TechList technologies={project.technologies} />
         <ProjectLinks liveUrl={project.liveUrl} repoUrl={project.repoUrl} />
