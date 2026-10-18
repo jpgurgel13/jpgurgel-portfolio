@@ -40,7 +40,7 @@
 }
 .aluraBadge:hover {
   background-color: var(--color-bg);
-  box-shadow: 1.5px 1.5px 2px 1px var(--color-accent-light);
+  box-shadow: 0 0 0.5rem var(--color-accent-light);
 }
 
 .projectImage {

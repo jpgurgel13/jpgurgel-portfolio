@@ -1,0 +1,118 @@
+/* Página inteira: largura de leitura confortável, centralizada */
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+/* Link de voltar: mesmo estilo do link da página 404 */
+.backLink {
+  align-self: flex-start;
+  color: var(--color-accent-light);
+  font-family: var(--font-mono);
+  text-underline-offset: 4px;
+  border-radius: var(--radius-sm);
+  transition: color 0.3s ease;
+}
+
+.backLink:hover {
+  color: var(--color-text);
+}
+
+.backLink:focus-visible {
+  outline: 2px solid var(--color-accent-light);
+  outline-offset: 3px;
+}
+
+/* Cabeçalho: selo, título e tags, um embaixo do outro */
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-3);
+}
+
+.aluraBadge {
+  padding: var(--space-1) var(--space-3);
+  border-radius: 999px;
+  background-color: color-mix(in srgb, var(--color-surface) 80%, transparent);
+  color: var(--color-accent);
+  font-family: var(--font-mono);
+  font-size: var(--fontsz-sm);
+  cursor: default;
+  transition:
+    background-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+.aluraBadge:hover {
+  background-color: var(--color-panel);
+  box-shadow: 0 0 0.5rem var(--color-accent-light);
+  transform: translateY(-0.2rem);
+}
+
+.projectTitle {
+  font-size: clamp(2rem, 6vw, 3rem);
+  line-height: 1.1;
+}
+
+/* Galeria: uma imagem embaixo da outra, cada uma com moldura */
+.gallery {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.galleryImage {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-md);
+}
+
+/* Seções de texto ("Sobre o projeto" e "Desafios") */
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.sectionTitle {
+  font-size: 1.5rem;
+}
+
+.paragraph {
+  color: var(--color-text-muted);
+  line-height: 1.7;
+}
+
+/* Cada desafio num bloquinho, com a borda colorida à esquerda */
+.challenge {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding: var(--space-4);
+  background-color: var(--color-panel);
+  border: 2px solid var(--color-border);
+  border-left-color: var(--color-accent);
+  border-radius: var(--radius-md);
+}
+
+.challengeTitle {
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  color: var(--color-accent-light);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .aluraBadge {
+    transition: none;
+  }
+  .aluraBadge:hover {
+    transform: none;
+  }
+}

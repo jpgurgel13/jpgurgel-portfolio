@@ -22,6 +22,13 @@ export const projectList: Project[] = [
     repoUrl: "https://github.com/jpgurgel13/Portifolio-padaria-v1",
     featured: false,
     alura: false,
+    challenges: [
+      {
+        problem:
+          "Era tudo novidade, passei horas tentando acertar o display flex, demorei umas 6 horas pra terminar uma parte que j=hoje faço em menos de 30 minutos",
+        solution: "Pesquisei como usa usei bibliotecas on-line",
+      },
+    ],
   },
   {
     slug: "jogo-numero-secreto",
@@ -39,6 +46,20 @@ export const projectList: Project[] = [
     repoUrl: "https://github.com/jpgurgel13/Jogo-Numero-Secreto",
     featured: false,
     alura: true,
+    challenges: [
+      {
+        problem:
+          "Entender como o JavaScript interage com o HTML e como dividir o código em módulos..",
+        solution:
+          "reassisti as aulas 3x e organizei as funções em arquivos separados e corrigir a referência da variável.",
+      },
+      {
+        problem:
+          "O segundo problema foi aprender a lógica do JavaScript, especialmente variáveis, funções e condicionais (if/else), para comparar o palpite com o número secreto e dar dicas ao jogador.",
+        solution:
+          "Usei condições para verificar o palpite e atualizar as mensagens da página",
+      },
+    ],
   },
   {
     slug: "lista-de-compras",
@@ -73,6 +94,6 @@ export const projectList: Project[] = [
     liveUrl: "https://colmeia-da-sofia.vercel.app/",
     repoUrl: "https://github.com/jpgurgel13/Colmeia-da-Sofia",
     featured: true,
-    alura: false,
+    alura: true,
   },
 ];
