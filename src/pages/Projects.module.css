@@ -1,7 +1,7 @@
 .container {
   display: flex;
   flex-direction: column;
-  gap: var(--space-4);
+  gap: var(--space-8);
 }
 .grid {
   display: grid;
@@ -10,4 +10,15 @@
 }
 .title {
   text-align: center;
+}
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-3);
+}
+.text {
+  color: var(--color-text-muted);
+  text-align: center;
+  max-width: 55ch;
 }

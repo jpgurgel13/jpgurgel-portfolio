@@ -54,8 +54,15 @@
 }
 
 @media (max-width: 480px) {
+  .topbar {
+    padding: 0 var(--space-2);
+  }
+  .nav {
+    gap: 0;
+  }
   .link {
-    padding: var(--space-2);
+    padding: var(--space-2) 0.375rem;
+    font-size: 0.8125rem;
   }
   .link svg {
     display: none;

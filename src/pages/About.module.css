@@ -1,0 +1,170 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-12);
+  max-width: 64rem;
+  margin: 0 auto;
+}
+
+/* ---------- Apresentação ---------- */
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--space-8);
+  align-items: center;
+}
+.heroTexts {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+.label {
+  color: var(--syntax-comment);
+  font-family: var(--font-mono);
+  font-size: var(--fontsz-sm);
+}
+.title {
+  font-size: clamp(2.25rem, 8vw, 3.5rem);
+  line-height: 1.1;
+}
+.highlight {
+  color: var(--color-primary);
+}
+.text {
+  color: var(--color-text-muted);
+  max-width: 60ch;
+  line-height: 1.7;
+}
+
+.mascotFrame {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  width: min(100%, 22rem);
+  background-color: var(--syntax-bg);
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+.frameName {
+  align-self: stretch;
+  padding: var(--space-2) var(--space-4);
+  border-bottom: 2px solid var(--color-border);
+  color: var(--syntax-comment);
+  font-family: var(--font-mono);
+}
+.mascotFrame img {
+  margin: var(--space-6) var(--space-4);
+}
+
+/* ---------- Seções ---------- */
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.journey {
+  list-style: none;
+}
+
+.strengthGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(16rem, 100%), 1fr));
+  gap: var(--space-4);
+  list-style: none;
+}
+.strengthCard {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-6);
+  background-color: var(--color-panel);
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-md);
+  transition: border-color 0.3s ease;
+}
+.strengthCard:hover {
+  border-color: var(--color-accent);
+}
+.strengthIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: var(--radius-md);
+  background-color: var(--color-surface);
+  color: var(--color-primary);
+}
+.strengthTitle {
+  font-size: 1.125rem;
+  line-height: 1.2;
+}
+.strengthText {
+  color: var(--color-text-muted);
+  font-size: 0.9375rem;
+}
+
+.tools {
+  color: var(--color-text-muted);
+}
+.toolNames {
+  color: var(--color-accent-light);
+  font-family: var(--font-mono);
+  font-size: var(--fontsz-sm);
+}
+
+/* ---------- Chamada final ---------- */
+.cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-6);
+  padding: var(--space-8) var(--space-6);
+  background-color: var(--color-panel);
+  border: 2px solid var(--color-border);
+  border-left: 4px solid var(--color-primary);
+  border-radius: var(--radius-md);
+  text-align: center;
+}
+.ctaTexts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-3);
+}
+.ctaTitle {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  line-height: 1.15;
+}
+.ctaButtons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-4);
+  margin-top: var(--space-2);
+}
+
+@media (min-width: 48rem) {
+  .hero {
+    grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+  }
+  .cta {
+    flex-direction: row;
+    text-align: left;
+  }
+  .ctaTexts {
+    align-items: flex-start;
+  }
+  .ctaButtons {
+    justify-content: flex-start;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .strengthCard {
+    transition: none;
+  }
+}

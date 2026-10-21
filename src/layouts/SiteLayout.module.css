@@ -19,3 +19,8 @@
   margin: 0 auto;
   padding: var(--space-8) var(--space-4);
 }
+
+.siteFooter {
+  background-color: var(--color-panel);
+  border-top: 1px solid var(--color-border);
+}

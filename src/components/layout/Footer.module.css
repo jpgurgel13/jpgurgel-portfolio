@@ -1,0 +1,46 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: var(--space-6) var(--space-4);
+}
+
+.text {
+  color: var(--color-text-muted);
+  font-family: var(--font-mono);
+  font-size: var(--fontsz-sm);
+}
+
+.socialList {
+  display: flex;
+  gap: var(--space-2);
+  list-style: none;
+}
+
+.socialLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  color: var(--color-text-muted);
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease,
+    background-color 0.2s ease;
+}
+.socialLink:hover {
+  color: var(--color-text);
+  border-color: var(--color-accent);
+  background-color: var(--color-surface);
+}
+.socialLink:focus-visible {
+  outline: 2px solid var(--color-accent-light);
+  outline-offset: 3px;
+}

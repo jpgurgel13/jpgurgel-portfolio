@@ -1,75 +1,60 @@
-# React + TypeScript + Vite
+# jpgurgel · portfólio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Portfólio pessoal do **JP (João Pedro)**, desenvolvedor front-end em formação.
 
-Currently, two official plugins are available:
+🔗 **No ar:** https://jpgurgel-portfolio.vercel.app/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Sobre o projeto
 
-## React Compiler
+Este é o meu primeiro projeto com React e TypeScript. Ele reúne os projetos que construí enquanto estudo front-end, a minha trajetória e os meus canais de contato. A identidade visual, o logo e a Aranha-Chip (o mascote em pixel art) fazem parte do projeto.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Páginas
 
-## Expanding the ESLint configuration
+| Rota              | O que tem                                             |
+| ----------------- | ----------------------------------------------------- |
+| `/`               | Apresentação e projetos recentes                      |
+| `/projects`       | Todos os projetos em cards                            |
+| `/projects/:slug` | Detalhes de um projeto: descrição, galeria e desafios |
+| `/about`          | Sobre mim, trajetória e ferramentas                   |
+| `/contact`        | WhatsApp, Instagram e GitHub                          |
+| qualquer outra    | Página 404 com o mascote                              |
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Tecnologias
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- React 19 + TypeScript
+- Vite
+- React Router
+- CSS Modules com design tokens (variáveis CSS)
+- Lucide (ícones)
+- Deploy na Vercel
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## O que pratiquei aqui
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+- Componentes reutilizáveis com props tipadas (`ProjectCard`, `TechList`, `ProjectLinks`, `Mascot`, `ButtonLink`)
+- Dados separados da interface (`src/data`) com tipos próprios (`src/types`)
+- Rotas dinâmicas com `useParams` e página 404
+- Layout responsivo com Grid e Flexbox
+- Acessibilidade: foco visível, textos alternativos e `prefers-reduced-motion`
+- Performance: imagens em WebP e `loading="lazy"`
 
+## Rodando na sua máquina
+
+```bash
+git clone https://github.com/jpgurgel13/jpgurgel-portfolio.git
+cd jpgurgel-portfolio
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+## Estrutura
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```
+src/
+├── assets/       # logo, mascote e prints dos projetos
+├── components/   # peças reutilizáveis (layout, projetos, sobre, contato, ui)
+├── data/         # conteúdo do site (projetos, contatos, navegação)
+├── layouts/      # moldura com topo, conteúdo e rodapé
+├── pages/        # uma página por rota
+├── styles/       # tokens e estilos globais
+└── types/        # moldes (tipos) dos dados
 ```

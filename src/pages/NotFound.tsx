@@ -1,13 +1,13 @@
 import { Link } from "react-router";
 import styles from "./NotFound.module.css";
+import Mascot from "../components/ui/Mascot";
 import spiderErrorImage from "../assets/mascot/aranha-chip/7-erro.png";
 
 function NotFound() {
   return (
     <section className={styles.container}>
-      <title>X 404 Pagina não encontrada X</title>
-      <img
-        className={styles.mascot}
+      <title>X 404 Página não encontrada X</title>
+      <Mascot
         src={spiderErrorImage}
         alt="Aranha-Chip, o mascote do site, com olhos em X e cara de erro"
         width={192}

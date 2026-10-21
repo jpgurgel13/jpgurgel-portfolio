@@ -1,3 +1,9 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-12);
+}
+
 .container {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
@@ -24,43 +30,6 @@
   gap: var(--space-6);
   flex-wrap: wrap;
 }
-.buttonPrimary,
-.buttonSecondary {
-  padding: var(--space-2) var(--space-3);
-  border: 2px solid transparent;
-  border-radius: var(--radius-md);
-  color: var(--color-text);
-  text-decoration: none;
-  transition:
-    background-color 0.3s ease,
-    border-color 0.3s ease,
-    transform 0.3s ease;
-}
-
-.buttonPrimary {
-  background-color: var(--color-primary);
-}
-
-.buttonPrimary:hover {
-  background-color: var(--color-primary-hover);
-  transform: translateY(-3px);
-}
-
-.buttonSecondary {
-  border-color: var(--color-accent);
-}
-
-.buttonSecondary:hover {
-  background-color: var(--color-panel);
-  border-color: var(--color-accent-light);
-  transform: translateY(-3px);
-}
-
-.buttonPrimary:focus-visible,
-.buttonSecondary:focus-visible {
-  outline: 2px solid var(--color-accent-light);
-  outline-offset: 3px;
-}
 .cursor {
   color: var(--color-accent);
   animation: blink 1s steps(1) infinite;
@@ -70,6 +39,45 @@
   50% {
     opacity: 0;
   }
+}
+
+/* ---------- Projetos recentes ---------- */
+.recent {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+.recentHeader {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+}
+.seeAll {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  color: var(--color-accent-light);
+  font-family: var(--font-mono);
+  font-size: var(--fontsz-sm);
+  text-decoration: none;
+  border-radius: var(--radius-sm);
+  transition: color 0.2s ease;
+}
+.seeAll:hover {
+  color: var(--color-text);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.seeAll:focus-visible {
+  outline: 2px solid var(--color-accent-light);
+  outline-offset: 3px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(18rem, 100%), 1fr));
+  gap: var(--space-3);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -82,6 +90,6 @@
   .container {
     grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
     align-items: center;
-    min-height: calc(100dvh - var(--header-height) - 1px - 2 * var(--space-8));
+    min-height: calc(75dvh - var(--header-height));
   }
 }
