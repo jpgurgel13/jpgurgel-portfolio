@@ -1,7 +1,7 @@
 import { Camera, CodeXml, MessageCircle } from "lucide-react";
 import type { ContactLink } from "../types/contactTypes";
 
-const whatsappNumber = "55067992945396";
+const whatsappNumber = "5567992945396";
 const whatsappMessage = "Olá, JP! Vi seu portfólio e queria conversar.";
 
 export const contactList: ContactLink[] = [
