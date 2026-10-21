@@ -28,12 +28,44 @@ function About() {
           <p className={styles.text}>
             Meu nome é João Pedro, mas pode me chamar de JP. Sou desenvolvedor
             front-end em formação, de Campo Grande (MS), e aprendo do jeito que
-            mais funciona para mim: construindo projetos de verdade.
+            mais funciona para mim: transformando ideias em projetos reais.
           </p>
           <p className={styles.text}>
-            Também tenho experiência com design, e isso aparece nos detalhes: a
-            identidade visual deste site e a Aranha-Chip, o mascote em pixel art
-            que você vai encontrar pelas páginas, nasceram de ideias minhas.
+            Sempre tive interesse pela área de criação, seja no desenvolvimento
+            de softwares, interfaces ou pequenos programas. Desde a escola, já
+            dizia que queria ser engenheiro de software. Minha jornada na
+            programação começou com Python, mas foi ao estudar HTML e CSS que
+            descobri minha verdadeira afinidade com o desenvolvimento front-end.
+          </p>
+          <p className={styles.text}>
+            Atualmente, meu foco está na criação de interfaces modernas,
+            responsivas e funcionais, utilizando tecnologias como HTML, CSS,
+            JavaScript e React. Valorizo a organização, a atenção aos detalhes e
+            a melhoria contínua, sempre buscando oferecer uma boa experiência
+            para quem utiliza meus projetos.
+          </p>
+          <p className={styles.text}>
+            Além da programação, também tenho interesse e experiência com
+            design, algo que procuro incorporar ao meu trabalho. A identidade
+            visual deste portfólio e a Aranha-Chip, meu mascote em pixel art que
+            você encontrará pelas páginas, nasceram de ideias minhas e
+            representam um pouco da criatividade que levo para cada projeto.
+          </p>
+          <p className={styles.text}>
+            Acredito que cada desafio é uma oportunidade de aprender, testar
+            conhecimentos e aprimorar minhas habilidades. Por isso, busco
+            evoluir constantemente, desenvolvendo projetos cada vez mais
+            sólidos, com código limpo, organizado e bem estruturado.
+          </p>
+          <p className={styles.text}>
+            Seja bem-vindo ao meu espaço! Aqui você encontrará meus projetos,
+            minha evolução e um pouco da trajetória que estou construindo na
+            programação.
+          </p>
+          <p className={styles.text}>
+            E, como já dizia o Homem-Aranha: “Com grandes poderes vêm grandes
+            responsabilidades.” No meu caso, isso significa continuar
+            aprendendo, evoluindo e escrevendo códigos cada vez melhores.
           </p>
         </div>
 
