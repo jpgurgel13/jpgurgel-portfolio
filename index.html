@@ -16,6 +16,15 @@
     />
     <meta property="og:url" content="https://jpgurgel-portfolio.vercel.app/" />
     <link rel="icon" type="image/svg+xml" href="/jp-favicon.svg" />
+    <script>
+      // Aplica o tema salvo antes da página aparecer, para não "piscar" o escuro.
+      // A chave é a mesma do ThemeToggle.tsx.
+      try {
+        if (localStorage.getItem("jpgurgel-theme") === "light") {
+          document.documentElement.dataset.theme = "light";
+        }
+      } catch (error) {}
+    </script>
     <title>jpgurgel | Dev. Front-end</title>
   </head>
   <body>
