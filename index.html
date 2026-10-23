@@ -20,8 +20,9 @@
       // Aplica o tema salvo antes da página aparecer, para não "piscar" o escuro.
       // A chave é a mesma do ThemeToggle.tsx.
       try {
-        if (localStorage.getItem("jpgurgel-theme") === "light") {
-          document.documentElement.dataset.theme = "light";
+        var savedTheme = localStorage.getItem("jpgurgel-theme");
+        if (savedTheme === "light" || savedTheme === "editor") {
+          document.documentElement.dataset.theme = savedTheme;
         }
       } catch (error) {}
     </script>

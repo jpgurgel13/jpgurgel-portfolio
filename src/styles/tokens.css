@@ -77,3 +77,22 @@
 
   color-scheme: light;
 }
+
+/* Tema do editor: PROVISÓRIO (paleta Dracula) até definirmos o tema do VS Code */
+[data-theme="editor"] {
+  --color-bg: #1e1f29;
+  --color-panel: #282a36;
+  --color-surface: #343746;
+  --color-border: #44475a;
+
+  --color-text: #f8f8f2;
+  --color-text-muted: #b4b9d2;
+
+  --color-primary: #dc3545;
+  --color-primary-hover: #b22632;
+  --color-accent: #3b82f6;
+  --color-accent-light: #8be9fd;
+  --color-success: #50fa7b;
+
+  --syntax-comment: #8a96c4;
+}
