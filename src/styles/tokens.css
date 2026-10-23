@@ -78,21 +78,30 @@
   color-scheme: light;
 }
 
-/* Tema do editor: PROVISÓRIO (paleta Dracula) até definirmos o tema do VS Code */
 [data-theme="editor"] {
-  --color-bg: #1e1f29;
-  --color-panel: #282a36;
-  --color-surface: #343746;
-  --color-border: #44475a;
+  --color-bg: #0b0506;
+  --color-panel: #150a0c;
+  --color-surface: #221114;
+  --color-border: #3d1a1f;
 
-  --color-text: #f8f8f2;
-  --color-text-muted: #b4b9d2;
+  --color-text: #f1e9e9;
+  --color-text-muted: #b59fa1;
 
-  --color-primary: #dc3545;
-  --color-primary-hover: #b22632;
-  --color-accent: #3b82f6;
-  --color-accent-light: #8be9fd;
-  --color-success: #50fa7b;
+  --color-primary: #a50f1c;
+  --color-primary-hover: #7c0b15;
+  --color-accent: #d0202e;
+  --color-accent-light: #ff7a82;
+  --color-success: #7fcf9a;
+  --color-on-primary: #ffffff;
 
-  --syntax-comment: #8a96c4;
+  --syntax-bg: #120809;
+  --syntax-text: #f1e9e9;
+  --syntax-comment: #b0898d;
+  --syntax-keyword: #ff5c66;
+  --syntax-property: #ffb3b8;
+  --syntax-string: #dcc7a8;
+
+  --shadow-card: 0 4px 22px rgba(165, 15, 28, 0.25);
+
+  color-scheme: dark;
 }

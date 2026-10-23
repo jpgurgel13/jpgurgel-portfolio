@@ -3,7 +3,6 @@ import { themeOptionList } from "../../data/themeData";
 import type { Theme } from "../../types/themeTypes";
 import styles from "./ThemeToggle.module.css";
 
-// A mesma chave é usada no script do index.html. Se mudar aqui, mude lá também.
 const STORAGE_KEY = "jpgurgel-theme";
 
 function getSavedTheme(): Theme {
