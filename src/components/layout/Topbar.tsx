@@ -2,6 +2,7 @@ import { Link, NavLink } from "react-router";
 import styles from "./Topbar.module.css";
 import LogoSymbol from "./LogoSymbol";
 import { navItems } from "../../data/navigation";
+import ThemeToggle from "./ThemeToggle";
 
 function Topbar() {
   return (
@@ -18,6 +19,7 @@ function Topbar() {
           </NavLink>
         ))}
       </nav>
+      <ThemeToggle />
     </div>
   );
 }
