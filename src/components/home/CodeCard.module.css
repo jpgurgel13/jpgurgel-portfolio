@@ -2,7 +2,7 @@
   background-color: var(--syntax-bg);
   border: solid 2px var(--color-border);
   border-radius: var(--radius-md);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+  box-shadow: var(--shadow-card);
   transition: transform 0.3s ease;
 }
 .container:hover {

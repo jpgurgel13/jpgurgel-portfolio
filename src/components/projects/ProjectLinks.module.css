@@ -22,6 +22,7 @@
 
 .liveLink {
   background-color: var(--color-primary);
+  color: var(--color-on-primary);
 }
 
 .liveLink:hover {
