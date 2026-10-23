@@ -2,6 +2,7 @@ import { Outlet } from "react-router";
 import styles from "./SiteLayout.module.css";
 import Topbar from "../components/layout/Topbar";
 import Footer from "../components/layout/Footer";
+import ScrollToTop from "../components/layout/ScrollToTop";
 
 function SiteLayout() {
   return (
@@ -17,6 +18,7 @@ function SiteLayout() {
       <footer className={styles.siteFooter}>
         <Footer />
       </footer>
+      <ScrollToTop />
     </div>
   );
 }
