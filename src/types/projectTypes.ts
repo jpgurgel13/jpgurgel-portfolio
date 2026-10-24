@@ -1,5 +1,10 @@
-export type Technology = "HTML" | "CSS" | "JavaScript" | "TypeScript" | "React";
-
+export type Technology =
+  | "HTML"
+  | "CSS"
+  | "JavaScript"
+  | "TypeScript"
+  | "React"
+  | "Python";
 export type Challenge = {
   problem: string;
   solution: string;
