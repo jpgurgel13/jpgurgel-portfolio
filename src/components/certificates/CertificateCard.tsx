@@ -9,8 +9,13 @@ type CertificateCardProps = {
 };
 
 function CertificateCard({ certificate, onOpenImage }: CertificateCardProps) {
+  const cardClassName =
+    certificate.kind === "formação"
+      ? `${styles.card} ${styles.featured}`
+      : styles.card;
+
   return (
-    <article className={styles.card}>
+    <article className={cardClassName}>
       <button
         type="button"
         className={styles.imageButton}
@@ -29,7 +34,7 @@ function CertificateCard({ certificate, onOpenImage }: CertificateCardProps) {
 
       <details className={styles.details}>
         <summary className={styles.summary}>
-          <h2 className={styles.title}>{certificate.title}</h2>
+          <h3 className={styles.title}>{certificate.title}</h3>
           <ChevronDown className={styles.arrow} size={20} aria-hidden="true" />
         </summary>
 

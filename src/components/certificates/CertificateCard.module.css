@@ -5,11 +5,22 @@
   border: solid 2px var(--color-border);
   border-radius: var(--radius-md);
   overflow: hidden;
-  transition: border-color 0.3s ease;
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .card:hover {
   border-color: var(--color-accent);
+}
+
+.featured {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0.5rem var(--color-accent);
+}
+
+.featured:hover {
+  box-shadow: 0 0 1rem var(--color-accent-light);
 }
 
 .imageButton {

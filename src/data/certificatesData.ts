@@ -14,13 +14,26 @@ import engenhariaPromptImage from "../assets/certificates/engenharia-de-prompt.w
 import chatgptImage from "../assets/certificates/chatgpt-qualidade-resultados.webp";
 import pythonMundo1Image from "../assets/certificates/python-mundo-1.webp";
 import pythonMundo2Image from "../assets/certificates/python-mundo-2.webp";
+import formacaoHtmlCssImage from "../assets/certificates/formacao-html-css-projetos-web.webp";
 
 const ALURA_URL = "https://cursos.alura.com.br/certificate/";
 
 export const certificateList: Certificate[] = [
   {
+    slug: "formacao-html-css-projetos-web",
+    title: "Formação HTML e CSS para projetos web",
+    kind: "formação",
+    platform: "Alura",
+    technologies: ["HTML", "CSS"],
+    image: formacaoHtmlCssImage,
+    // formação usa outro endereço (/degree/certificate/), por isso o link vai inteiro
+    certificateUrl:
+      "https://cursos.alura.com.br/degree/certificate/b51a2ed5-f18f-4302-93cf-2c6be9f7b731",
+  },
+  {
     slug: "html-css-ambientes-estrutura-tags",
-    title: "HTML e CSS: ambientes de desenvolvimento, estrutura de arquivos e tags",
+    title:
+      "HTML e CSS: ambientes de desenvolvimento, estrutura de arquivos e tags",
     kind: "curso",
     platform: "Alura",
     technologies: ["HTML", "CSS"],
@@ -47,7 +60,8 @@ export const certificateList: Certificate[] = [
   },
   {
     slug: "html-css-responsividade-publicacao",
-    title: "HTML e CSS: trabalhando com responsividade e publicação de projetos",
+    title:
+      "HTML e CSS: trabalhando com responsividade e publicação de projetos",
     kind: "curso",
     platform: "Alura",
     technologies: ["HTML", "CSS"],
