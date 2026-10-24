@@ -60,7 +60,7 @@
 }
 
 /* Celular: logo e tema na primeira linha, menu inteiro na segunda */
-@media (max-width: 480px) {
+@media (max-width: 820px) {
   .topbar {
     flex-wrap: wrap;
     height: auto;
@@ -76,10 +76,12 @@
   .nav {
     order: 3;
     flex-basis: 100%;
+    flex-wrap: wrap;
     justify-content: space-between;
+    gap: 0;
   }
   .link {
-    padding: var(--space-2);
+    padding: var(--space-2) var(--space-1);
     font-size: 0.8125rem;
   }
   .link svg {

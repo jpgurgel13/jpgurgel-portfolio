@@ -1,0 +1,125 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-panel);
+  border: solid 2px var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: border-color 0.3s ease;
+}
+
+.card:hover {
+  border-color: var(--color-accent);
+}
+
+.imageButton {
+  display: block;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: zoom-in;
+}
+
+.imageButton:focus-visible {
+  outline: 2px solid var(--color-accent-light);
+  outline-offset: -4px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: opacity 0.3s ease;
+}
+
+.imageButton:hover .image {
+  opacity: 0.85;
+}
+
+.summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  padding: var(--space-4);
+  cursor: pointer;
+  list-style: none;
+}
+
+/* esconde o triângulo padrão do navegador (Safari) */
+.summary::-webkit-details-marker {
+  display: none;
+}
+
+.summary:focus-visible {
+  outline: 2px solid var(--color-accent-light);
+  outline-offset: -4px;
+}
+
+.title {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.arrow {
+  flex-shrink: 0;
+  color: var(--color-text-muted);
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease;
+}
+
+.summary:hover .arrow {
+  color: var(--color-accent-light);
+}
+
+/* quando o <details> está aberto, a seta vira para cima */
+.details[open] .arrow {
+  transform: rotate(180deg);
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-4);
+  padding: 0 var(--space-4) var(--space-4);
+}
+
+.platform {
+  color: var(--color-text-muted);
+}
+
+.platform strong {
+  color: var(--color-text);
+}
+
+.verifyLink {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-md);
+  background-color: var(--color-primary);
+  color: var(--color-on-primary);
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.verifyLink:hover {
+  background-color: var(--color-primary-hover);
+}
+
+.verifyLink:focus-visible {
+  outline: 2px solid var(--color-accent-light);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card,
+  .image,
+  .arrow,
+  .verifyLink {
+    transition: none;
+  }
+}

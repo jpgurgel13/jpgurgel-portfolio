@@ -1,0 +1,52 @@
+.dialog {
+  max-width: min(64rem, 92vw);
+  max-height: 92vh;
+  padding: 0;
+  margin: auto;
+  border: solid 2px var(--color-border);
+  border-radius: var(--radius-md);
+  background-color: var(--color-panel);
+  overflow: hidden;
+}
+
+.dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.content {
+  position: relative;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: calc(92vh - 4px);
+  object-fit: contain;
+}
+
+.closeButton {
+  position: absolute;
+  top: var(--space-3);
+  right: var(--space-3);
+  display: grid;
+  place-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 999px;
+  background-color: color-mix(in srgb, var(--color-bg) 80%, transparent);
+  color: var(--color-text);
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.closeButton:hover {
+  background-color: var(--color-primary);
+  color: var(--color-on-primary);
+}
+
+.closeButton:focus-visible {
+  outline: 2px solid var(--color-accent-light);
+  outline-offset: 2px;
+}
