@@ -105,9 +105,11 @@ export const projectList: Project[] = [
     summary:
       "O Kinesis Lab é uma experiência interativa que transforma movimentos das mãos em partículas luminosas em tempo real. Desenvolvido com React, TypeScript, Canvas 2D e MediaPipe, o projeto explora a união entre desenvolvimento web, visão computacional e simulação visual.",
     description: [
-      "O Kinesis Lab é um laboratório visual interativo criado para explorar novas possibilidades de interação no navegador. Utilizando a câmera do dispositivo e o reconhecimento de mãos por meio do MediaPipe, o projeto transforma gestos e movimentos em uma simulação dinâmica de partículas luminosas.",
-      "A experiência combina campos de partículas, efeitos de atração e repulsão, mudanças de cores e acúmulo de energia para criar uma interface que responde aos movimentos do usuário. Também conta com um modo de demonstração, permitindo explorar a experiência sem precisar ativar a câmera.",
-      "Desenvolvido com React, TypeScript, Vite e Canvas 2D, o projeto reúne conceitos de desenvolvimento de interfaces, processamento de dados em tempo real, animação e visão computacional. Mais do que uma aplicação tradicional, o Kinesis Lab é um experimento criativo que explora como o código pode transformar gestos físicos em experiências digitais.",
+      "O Kinesis Lab é um laboratório visual interativo criado para explorar novas possibilidades de interação no navegador. O projeto utiliza a câmera do dispositivo e o reconhecimento de mãos por meio do MediaPipe para transformar gestos e movimentos em uma simulação dinâmica de partículas luminosas.",
+
+      "A experiência combina efeitos de atração e repulsão, mudanças de cores e acúmulo de energia, criando uma interface que reage aos movimentos do usuário. Também conta com um modo de demonstração que permite explorar a experiência sem precisar ativar a câmera.",
+
+      "Desenvolvido com React, TypeScript, Vite e Canvas 2D, o Kinesis Lab nasceu como um experimento criativo que conduzi com **amplo apoio do Claude (IA)**, responsável por grande parte da implementação do código. Minha participação esteve principalmente na concepção da ideia, na definição da experiência visual e das interações desejadas e na orientação do desenvolvimento. O projeto representa uma oportunidade de explorar tecnologias além do meu nível atual de domínio e aprender, na prática, sobre desenvolvimento web, animação e visão computacional..",
     ],
     technologies: [
       "HTML",
