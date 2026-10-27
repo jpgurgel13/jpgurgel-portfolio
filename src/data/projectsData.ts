@@ -3,6 +3,7 @@ import padariaImagem from "../assets/projects/primeiro-projeto-padaria.webp";
 import jogoImagem from "../assets/projects/jogo-numero-secreto.webp";
 import colmeiaImagem from "../assets/projects/colmeia-da-sofia.webp";
 import listaComprasImagem from "../assets/projects/lista-de-compras.webp";
+import kinesisImagem from "../assets/projects/kinesis-lab.webp";
 
 export const projectList: Project[] = [
   {
@@ -94,6 +95,30 @@ export const projectList: Project[] = [
     images: [colmeiaImagem],
     liveUrl: "https://colmeia-da-sofia.vercel.app/",
     repoUrl: "https://github.com/jpgurgel13/Colmeia-da-Sofia",
+    featured: true,
+    alura: false,
+  },
+  {
+    slug: "kinesis-lab",
+    title: "Kinesis Lab",
+    summary:
+      "O Kinesis Lab é uma experiência interativa que transforma movimentos das mãos em partículas luminosas em tempo real. Desenvolvido com React, TypeScript, Canvas 2D e MediaPipe, o projeto explora a união entre desenvolvimento web, visão computacional e simulação visual.",
+    description: [
+      "O Kinesis Lab é um laboratório visual interativo criado para explorar novas possibilidades de interação no navegador. Utilizando a câmera do dispositivo e o reconhecimento de mãos por meio do MediaPipe, o projeto transforma gestos e movimentos em uma simulação dinâmica de partículas luminosas.",
+      "A experiência combina campos de partículas, efeitos de atração e repulsão, mudanças de cores e acúmulo de energia para criar uma interface que responde aos movimentos do usuário. Também conta com um modo de demonstração, permitindo explorar a experiência sem precisar ativar a câmera.",
+      "Desenvolvido com React, TypeScript, Vite e Canvas 2D, o projeto reúne conceitos de desenvolvimento de interfaces, processamento de dados em tempo real, animação e visão computacional. Mais do que uma aplicação tradicional, o Kinesis Lab é um experimento criativo que explora como o código pode transformar gestos físicos em experiências digitais.",
+    ],
+    technologies: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "Canvas2D",
+    ],
+    images: [kinesisImagem],
+    liveUrl: "https://kinesis-lab-three.vercel.app",
+    repoUrl: "https://github.com/jpgurgel13/kinesis-lab.git",
     featured: true,
     alura: false,
   },
