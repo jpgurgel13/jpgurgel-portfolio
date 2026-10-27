@@ -4,6 +4,7 @@ import jogoImagem from "../assets/projects/jogo-numero-secreto.webp";
 import colmeiaImagem from "../assets/projects/colmeia-da-sofia.webp";
 import listaComprasImagem from "../assets/projects/lista-de-compras.webp";
 import kinesisImagem from "../assets/projects/kinesis-lab.webp";
+import kinesisImagemSeg from "../assets/projects/kinesis-lab-demo.webp";
 
 export const projectList: Project[] = [
   {
@@ -116,10 +117,65 @@ export const projectList: Project[] = [
       "React",
       "Canvas2D",
     ],
-    images: [kinesisImagem],
+    images: [kinesisImagem, kinesisImagemSeg],
     liveUrl: "https://kinesis-lab-three.vercel.app",
     repoUrl: "https://github.com/jpgurgel13/kinesis-lab.git",
     featured: true,
     alura: false,
+    challenges: [
+      {
+        problem: "Animar milhares de partículas a 60 FPS sem travar a página.",
+        solution:
+          "Mantive a simulação fora do React, num laço com requestAnimationFrame e Canvas 2D. O React só é avisado quando algo visível muda, como a pose do mascote, em vez de 60 vezes por segundo.",
+      },
+      {
+        problem:
+          "Com o campo de correntes, as partículas se juntavam em poucos pontos e o efeito ficava feio.",
+        solution:
+          "Criei um ciclo de vida. Cada partícula nasce, vive um tempo sorteado e renasce em outro lugar, com um fade suave, o que mantém o enxame sempre distribuído.",
+      },
+      {
+        problem:
+          "O rastreamento da mão levava cerca de 30 ms por quadro, mais que o tempo inteiro de um quadro a 60 FPS, e a animação caía para 40 FPS.",
+        solution:
+          "Levei o MediaPipe para um Web Worker, uma segunda linha de execução. A animação voltou a 60 FPS enquanto a IA trabalha em paralelo.",
+      },
+      {
+        problem:
+          "Em alguns computadores, a detecção pela GPU dentro do worker travava e nunca respondia.",
+        solution:
+          "Implementei um plano B automático: se um quadro fica mais de 2 segundos sem resposta, o worker é reiniciado usando a CPU, e a experiência continua sem a pessoa perceber.",
+      },
+      {
+        problem:
+          "A mão era detectada só de 12 a 20 vezes por segundo, então o movimento aparecia aos saltos.",
+        solution:
+          "Entre uma detecção e outra, a posição desliza suavemente até o ponto detectado. Também ignoro perdas de detecção curtas, para evitar explosões acidentais.",
+      },
+      {
+        problem:
+          "Criar uma regra confiável de mão aberta ou fechada, que funcionasse com a mão perto, longe ou inclinada.",
+        solution:
+          "Uso os pontos 3D do MediaPipe e meço a distância das pontas dos dedos até o pulso, dividida pelo tamanho da palma. Duas faixas de limite (histerese) evitam que o estado fique piscando.",
+      },
+      {
+        problem:
+          "Fazer as partículas contornarem os dedos e a palma, e não apenas um ponto no centro da mão.",
+        solution:
+          "Transformei os 21 pontos da mão em ossos com espessura (cápsulas). Para não pesar, cada partícula faz primeiro um teste rápido de retângulo, e só as que estão perto passam pelo cálculo completo.",
+      },
+      {
+        problem:
+          "O rastreamento ficou lento e havia muitas causas possíveis para investigar.",
+        solution:
+          "Criei uma medição no modo de desenvolvimento (detecções por segundo, tempo de ida e volta e tempo da IA) e testei uma variável por vez. Assim descobri que o gargalo era o modelo, e não a quantidade de partículas.",
+      },
+      {
+        problem:
+          "Uma experiência baseada em movimento e luz não podia excluir ninguém.",
+        solution:
+          "Respeito a preferência do sistema por movimento reduzido, permito usar o modo demonstração pelo teclado e envio avisos para leitores de tela, como 'Mão detectada' e 'Carregando: 50%'.",
+      },
+    ],
   },
 ];
