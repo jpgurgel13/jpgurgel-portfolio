@@ -116,6 +116,7 @@ export const projectList: Project[] = [
       "TypeScript",
       "React",
       "Canvas2D",
+      "Claude-AI",
     ],
     images: [kinesisImagem, kinesisImagemSeg],
     liveUrl: "https://kinesis-lab-three.vercel.app",

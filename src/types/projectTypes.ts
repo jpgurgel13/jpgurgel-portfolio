@@ -5,7 +5,9 @@ export type Technology =
   | "TypeScript"
   | "React"
   | "Python"
-  | "Canvas2D";
+  | "Canvas2D"
+  | "Claude-AI"
+  | "ChatGPT";
 
 export type Challenge = {
   problem: string;
